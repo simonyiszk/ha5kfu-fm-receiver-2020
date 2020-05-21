@@ -4,4 +4,10 @@ $CMP Bandpass_filter
 K filter
 $ENDCMP
 #
+$CMP SA612
+D Double-balanced mixer
+K DBM, mixer
+F https://www.nxp.com/docs/en/data-sheet/SA612A.pdf
+$ENDCMP
+#
 #End Doc Library
