@@ -74,7 +74,7 @@ U 1 1 5EB64134
 P 5100 1650
 F 0 "FL1" H 5100 2117 50  0000 C CNN
 F 1 "sfj10.7ma" H 5100 2026 50  0000 C CNN
-F 2 "" H 5100 2150 50  0001 C CNN
+F 2 "custom:sfj10.7ma" H 5100 2150 50  0001 C CNN
 F 3 "" H 5100 1750 50  0001 C CNN
 	1    5100 1650
 	1    0    0    -1  
@@ -1253,10 +1253,6 @@ F 3 "" H 4200 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 1800 3950 1800
-Wire Wire Line
-	3950 1800 3950 1650
-Wire Wire Line
 	3950 1650 4200 1650
 Connection ~ 4200 1650
 Wire Notes Line
@@ -2128,19 +2124,6 @@ F 3 "" H 1450 3700 50  0001 C CNN
 $EndComp
 Text Notes 7000 6750 0    118  ~ 0
 Univerzális, Redpitaya és analóg FM vevő
-$Comp
-L Device:C C4
-U 1 1 5ED39B46
-P 1600 1450
-F 0 "C4" V 1348 1450 50  0000 C CNN
-F 1 "dnp" V 1439 1450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1638 1300 50  0001 C CNN
-F 3 "~" H 1600 1450 50  0001 C CNN
-	1    1600 1450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1450 1450 1300 1450
 Wire Wire Line
 	1300 1450 1300 1850
 Connection ~ 1300 1850
@@ -2229,7 +2212,6 @@ Wire Notes Line
 	7050 1750 7400 1750
 Wire Notes Line
 	5650 700  7400 700 
-NoConn ~ 3800 1900
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5EDFA4EC
@@ -2254,7 +2236,6 @@ F 3 "" H 1200 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1200 1450 1300 1450
-Connection ~ 1300 1450
 Connection ~ 7150 1650
 Wire Wire Line
 	7150 1650 7200 1650
@@ -2290,4 +2271,9 @@ F 3 "" H 6750 1350 50  0001 C CNN
 $EndComp
 Text Notes 6350 850  0    50   ~ 0
 C41  Csak detektoroshoz!
+Wire Wire Line
+	3800 1900 3950 1900
+Wire Wire Line
+	3950 1650 3950 1900
+NoConn ~ 3800 1800
 $EndSCHEMATC
